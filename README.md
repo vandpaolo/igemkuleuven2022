@@ -56,6 +56,7 @@ To work locally with this project, you'll have to follow the steps below:
 git clone https://gitlab.igem.org/2022/ku-leuven
 cd example
 python3 -m venv venv
+
 . venv/bin/activate
 pip install -r dependencies.txt
 ```
