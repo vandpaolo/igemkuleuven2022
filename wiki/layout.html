@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="https://static.igem.wiki/common/icons/favicons/igem-2022.svg"/>
     <link rel="license" href="https://creativecommons.org/licenses/by/4.0/"/>
+    <link rel="icon" type="image/x-icon" href="static\media\bubblelogo-removebg-preview.ico">
 
     <!-- Bootstrap CSS -->
     <link href="{{ url_for('static', filename = 'bootstrap.min.css') }}" rel="stylesheet">
@@ -13,10 +14,12 @@
     <!-- Custom CSS -->
     <link href="{{ url_for('static', filename = 'style.css') }}" rel="stylesheet">
 
-    <title>{% block title %}{% endblock %} | AHN KU Leuven - iGEM 2022</title>
+    <title>{% block title %}{% endblock %} | KU-Leuven iGEM 2022 </title>
 
 </head>
 <body>
+
+
   <!-- Navigation -->
   {% include 'menu.html' %}
 

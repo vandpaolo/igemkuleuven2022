@@ -1,7 +1,14 @@
-body { padding-top: 56px; }
+/*menu*/
+
+/* body */
+body { 
+    padding-top: 56px; 
+    font-family: "Century Gothic", 'Lato', sans-serif;
+}
 .left-aligned { margin-left: auto; }
-.bg-dark { background-color: #343a40 !important; }
-.bg-hero { background-color: #7952b3; }
+.bg-dark { background-color: #f38d8d !important; }
+.bg-hero { background-color: #6926ce; }
+
 
 /* CALLOUT */
 .bd-callout { padding:1.25rem; margin-top:1.25rem; margin-bottom:1.25rem; border:1px solid #e9ecef; border-left-width:.25rem; border-radius:.25rem }
@@ -16,3 +23,6 @@ body { padding-top: 56px; }
 /* footer */
 footer a { color: white; font-weight: bold; text-decoration: none; }
 footer a:hover { color: white; text-decoration: underline; }
+
+
+
