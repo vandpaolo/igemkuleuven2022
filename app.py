@@ -2,8 +2,6 @@ from os import path
 from pathlib import Path
 
 from flask import Flask, render_template
-#dfsadadfasfa
-#fjsngkfngsnglfsnglsnl
 from flask_frozen import Freezer
 
 
