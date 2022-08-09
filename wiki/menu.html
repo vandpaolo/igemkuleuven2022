@@ -75,7 +75,15 @@
 
         <!---- HUMAN PRACTICES ---->
         <li class="nav-item">
-          <a class="nav-link" href="{{ url_for('pages', page='human-practices') }}">Human Practices</a>
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Human Practices
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="{{ url_for('pages', page='Human_practices2') }}">Human Practices</a></li>
+                <li><a class="dropdown-item" href="{{ url_for('pages', page='Education_&_Communication') }}">Education & Communication</a></li>
+                <li><a class="dropdown-item" href="{{ url_for('pages', page='Collaboration') }}">Collaborations</a></li>
+                <li><a class="dropdown-item" href="{{ url_for('pages', page='Engagement') }}">Engagement</a></li>
+              </ul>
         </li>
 
         <!---- AWARDS ---->
