@@ -14,14 +14,28 @@
     <!-- Custom CSS -->
     <link href="{{ url_for('static', filename = 'style.css') }}" rel="stylesheet">
 
+    <!-- font awsome icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/688dc0e3b9.js" crossorigin="anonymous"></script>
+    
+    <!-- jquery library  -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+  
+
     <title>{% block title %}{% endblock %} | KU-Leuven iGEM 2022 </title>
 
+    
 </head>
-<body>
 
-  <!-- Navigation -->
+
+<div class="navbar_layout">
   {% include 'menu.html' %}
+</div>
 
+
+
+<body>
 
   <!-- Page Content -->
   <div>
@@ -36,8 +50,16 @@
 
   <!-- Bootstrap Bundle with Popper -->
   <script src="{{ url_for('static', filename = 'bootstrap.bundle.min.js') }}"></script>
+  
 </body>
 </html>
+
+<!--
+<a href="https://www.flaticon.com/free-icons/instagram" title="instagram icons">Instagram icons created by edt.im - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/facebook" title="facebook icons">Facebook icons created by pictogramer - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/email" title="email icons">Email icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/email" title="email icons">Email icons created by BomSymbols - Flaticon</a>
+-->
 
 
 

@@ -1,11 +1,7 @@
-/*menu*/
 
 
-/*#################################*/
+/*#############CUSTOMIZE THE CAROUSEL####################*/
 
-  /* CUSTOMIZE THE CAROUSEL
-  -------------------------------------------------- */
-  
   /* Carousel base class */
   .carousel {
     margin-bottom: 4rem;
@@ -21,33 +17,8 @@
   
   /* Declare heights because of positioning of img element */
   .carousel-item {
-    height: 41rem;
+    height: 42rem;
   }
-  
-
-  
-  /* Center align the text within the three columns below the carousel */
-  .marketing .col-lg-4 {
-    margin-bottom: 1.5rem;
-    text-align: center;
-  }
-  /* rtl:begin:ignore */
-  .marketing .col-lg-4 p {
-    margin-right: .75rem;
-    margin-left: .75rem;
-  }
-  /* rtl:end:ignore */
-  
-  .featurette-divider {
-    margin: 5rem 0; /* Space out the Bootstrap <hr> more */
-  }
-  
-  /* Thin out the marketing headings */
-  /* rtl:begin:remove */
-  .featurette-heading {
-    letter-spacing: -.05rem;
-  }
-
   
   @media (min-width: 40em) {
     /* Bump up size of carousel content */
@@ -67,23 +38,37 @@
       margin-top: 7rem;
     }
   }
-  /*#################################*/
-
-
-
+  /*#################END CAROUSEl################*/
 
 
 
 @font-face {
-    font-family: merriweather;
-    src: "static\fonts\merriweather\Merriweather-Regular.ttf";
+    font-family: Merriweather-Regular;
+    src: "static\fonts\merriweather\Merriweather-Regular.ttf" format('truetype');
     font-style: normal;
 }
 
-  #logo {
-    height: 60px;
-    margin-left: 0px;
-    margin-right: 0px;
+@font-face {
+  font-family: Starbucks;
+  font-style: bold;
+  src: url("static\fonts\starbucks-font\Freight Sans Black\Freight Sans Black.otf") format("opentype");
+  
+}
+
+@font-face {
+  font-family: Heavitas;
+  font-style: normal;
+  src: url("static\fonts\Heavitas-Font\Heavitas.ttf") format('truetype');
+  
+}
+
+  
+
+  #navbar {
+    //overflow: hidden;
+    font-size: 25px;
+    background-color: #333333;
+    min-height: 48px;
   }
 
   header{
@@ -94,113 +79,166 @@
 
   body { 
     padding-top: 56px; 
-    font-family: "Century Gothic", 'Lato', sans-serif;
+    font-family: 'Heavitas';
 }
 
 .container {
     size: auto;
 }
 
-  /* navbar styles implement later*/
-  .navbartu {
-    z-index: 1;
-    background-color: rgb(152, 81, 81);
-    top:14px;
-    width:100%;
-    position:fixed;
-    border-bottom: 2px solid #FCC30D;
-  }
 
-  .floatingNav {
-    box-shadow: 0px 1px 10px #999;
-  }
+/*#################STYLING THE NAVBAR################*/
 
-  .navbartu a {
-    float: left;
-    display:block;
-    font-size: 14px;
-    color: #525252;
-    text-align: center;
-    margin-top: 10px;
-    padding: 10px 10px;
-    text-decoration: none;
-  }
+.navbar .navbar-brand-img .logo {
+  height: 60px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
 
-  .navbartu .test {
-    font-size: 14px;
-    color: #525252;
-    text-align: center;
-    padding: 10px 10px;
-    text-decoration: none;
-    margin-top: 10px;
-  }
+/* email ig fb mail */
+.icon{
+  height:25px;
+  position:autos;
+  margin-right: 2px;
+  margin-left: 2px;
+  margin-bottom: -7px;
+}
+.navbar .navbar-nav i{
+  color: black;
+}
+.sticky .navbar-nav i {
+  color: white;
+}
 
-  .navbartu .social{
-    float: right;
+.icon:hover {
+  color: #2F9E9E;
+  transition: 0.6s;
+}
+/* email ig fb mail end */
+
+.navbar_layout {
+  background-color: #662f2f;
+}
+
+.navbar .logo .logo_white{
+  display:inline;
+}
+.navbar .logo .logo_black{
+  display:none;
+}
+.sticky .logo .logo_white{
+  display:none;
+}
+.sticky .logo .logo_black{
+  display:inline;
+}
+
+.navbar{
+  font-size: 17px;  
+  border: none;
+  outline: none;
+  color: #000000;
+  background-color: #ffffff;
+  display:flex;
+  margin:0px;
+  padding: 8px 8px;
+  text-decoration: none;
+  /*  blank space from top */
   margin-top: 20px;
-    padding: 10px 10px;
-  }
+  z-index:10000;
+  transition:0.6s;
+  
+}
 
-  .dropdowntu {
-    float: left;
-  }
+.sticky {
+  font-size: 17px;  
+  border: none;
+  outline: none;
+  color: #ffffff;
+  background-color: #005151;
+  margin:0px;
+  padding:5px 100px;
+  text-decoration: none;
+  /*  blank space from top */
+  transition:0.6s;
+  
+}
 
-  .dropdowntu .dropbtn {
-    font-size: 16px;  
-    border: none;
-    outline: none;
-    color: #525252;
-    background-color: inherit;
-    font-family: inherit;
-    margin:0px;
-    padding: 8px 8px;
-    text-decoration: none;
-    margin-top: 20px;
+.navbar .logo{
+  height:auto;
+  position:auto;
+  
+}
 
-  }
+.navbar .navbar-nav li a{
+    color: #000000;
+    font-family: 'Heavitas',sans-serif;
+    font-size: 20px;}
+.sticky .navbar-nav li a{
+  color: #ffffff;
+  font-family: 'Heavitas',sans-serif;
+  font-size: 20px;
+}
 
-  .navbartu a:hover, .dropdowntu:hover .dropbtn {
-    background-color: none;
-    text-decoration:none;
-    color:#FCC30D;
-  }
+.icon{
+  height:20px;
+  position:auto;
+  margin-left:10px;
+  margin-right: 10px;
+  margin-top: 7px;
+}
 
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
+.navbar .navbar-nav{
+  background-color: inherit;
+}
 
-  .dropdown-content a {
-    float: none;
-    color: #525252;
-    padding: 10px 10px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
 
-  .dropdown-content a:hover {
-    background-color: #ddd;
-    text-decoration:none;
-    color:#000000;
-  }
+.nav-item a{
+  background-color: inherit;
 
-  .dropdowntu:hover .dropdown-content {
-    display: block;
-    text-decoration:none;
-  }
-  .navbartu .icon {
-    display: none;
-    padding: 10px 10px;
-  }
+}
 
+.navbar .dropdown-menu{
+  margin-top: 14px;
+  background-color:#ffffff;}
+.sticky .dropdown-menu{
+  margin-top: 11px;
+  background-color:#005151;
+  transition: 0.5s;
+}
+
+.navbar .dropdown-item:hover, .dropdown-item a:hover, .nav-item:hover{
+  background-color: none;
+  text-decoration:none;
+  color:#6AB0B0;}
+.sticky .dropdown-item:hover, .dropdown-item a:hover, .nav-item:hover{
+  background-color: none;
+  text-decoration:none;
+  color:#ff0400;
+
+}
+
+.dropdown-item:active{
+  color: red;
+  background-color: rgb(0, 35, 233)}
+.sticky.dropdown-item:active{
+  color: red;
+  background-color: rgb(0, 35, 233)
+}
+
+
+.shadow {
+  box-shadow: 0px 1px 10px rgb(0, 0, 0);
+}
+
+
+
+
+/*#################END NAVBAR################*/
 
 .left-aligned { margin-left: auto; }
 .bg-dark { background-color: #005151 !important; }
+.bg-light { background-color: #ffffff !important; }
 .bg-hero { background-color: #6AB0B0; }
 
 
