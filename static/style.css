@@ -89,11 +89,12 @@
 
 /*#################STYLING THE NAVBAR################*/
 
-.navbar .navbar-brand-img .logo {
+.navbar .logo {
   height: 60px;
   margin-left: 0px;
   margin-right: 0px;
 }
+
 
 /* email ig fb mail */
 .icon{
@@ -120,17 +121,17 @@
   background-color: #662f2f;
 }
 
-.navbar .logo .logo_white{
-  display:inline;
-}
-.navbar .logo .logo_black{
+.navbar .logo_white{
   display:none;
 }
-.sticky .logo .logo_white{
-  display:none;
-}
-.sticky .logo .logo_black{
+.navbar .logo_green{
   display:inline;
+}
+.sticky .logo_white{
+  display:inline;
+}
+.sticky .logo_green{
+  display:none;
 }
 
 .navbar{
@@ -164,11 +165,6 @@
   
 }
 
-.navbar .logo{
-  height:auto;
-  position:auto;
-  
-}
 
 .navbar .navbar-nav li a{
     color: #000000;
