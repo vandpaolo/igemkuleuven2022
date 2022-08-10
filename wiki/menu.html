@@ -6,17 +6,13 @@
 
 
     <!--  TEAM LOGO ON NAVBAR-->
-    <a class="logo" href="https://2022.igem.wiki/ku-leuven/"> 
-        <div class = "navbar-brand-img">
-            <img class = "logo_white logo" src="static\media\_touse_newlogo-removebg-preview-removebg-preview.png" alt="" >
-            <img class = "logo_black logo" src="static\media\_touse_toeditone-removebg-preview.png" alt="" >
-        </div>
-    </a>
-    
+    <a href="https://2022.igem.wiki/ku-leuven/"> 
+      <img id="logo" src="static\media\newlogo-removebg-preview.png" alt="" ></a>
+    <a class="logo" href="https://2022.igem.wiki/ku-leuven/"></a>
+
     <!-- static\media\newlogo-removebg-preview.png  -->
 
-
-    <!---- SMALL SCREEN MENU ICON -- BURGIR---->
+    <!---- SMALL SCREEN MENU ICON ---->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
     </button>
@@ -82,8 +78,8 @@
         </li>
 
         <!---- HUMAN PRACTICES ---->
-        <li class="nav-item dropbtn">
-        <a class="nav-link" href="{{ url_for('pages', page='human-practices') }}">Human Practices</a>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('pages', page='human-practices') }}">Human Practices</a>
         </li>
 
         <!---- AWARDS ---->
