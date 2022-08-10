@@ -89,12 +89,6 @@
 
 /*#################STYLING THE NAVBAR################*/
 
-.navbar .logo {
-  height: 60px;
-  margin-left: 0px;
-  margin-right: 0px;
-}
-
 
 /* email ig fb mail */
 .icon{
@@ -121,6 +115,11 @@
   background-color: #662f2f;
 }
 
+.navbar .logo {
+  height: 60px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
 .navbar .logo_white{
   display:none;
 }
