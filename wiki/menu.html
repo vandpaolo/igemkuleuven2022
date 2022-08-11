@@ -27,15 +27,19 @@
 
         <!---- HOME ---->
         <li class="nav-item dropbtn">
-        <a class="nav-link" href="{{ url_for('index') }}">Home</a>
+        <div class="hover_box">
+            <a class="nav-link" href="{{ url_for('index') }}">Home</a>
+        </div>
         </li>
 
         <!---- TEAM ---->
-        <li class="nav-item dropdown dropbtn">
-        <a class="nav-link dropdown-toggle" href="{{ url_for('pages', page='team') }}" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <li class="nav-item dropdown dropbtn ">
+        <div class="hover_box">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="{{ url_for('pages', page='team') }}" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Team
         </a>
-        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+        </div>  
+        <ul class="dropdown-menu" role="menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="{{ url_for('pages', page='team') }}">Team</a></li>
             <li><a class="dropdown-item" href="{{ url_for('pages', page='attributions') }}">Attributions</a></li>
             <li><a class="dropdown-item" href="{{ url_for('pages', page='collaborations') }}">Collaborations</a></li>
@@ -44,10 +48,12 @@
 
         <!---- PROJECT ---->
         <li class="nav-item dropdown dropbtn">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <div class="hover_box">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Project
         </a>
-        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+        </div>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="{{ url_for('pages', page='communication') }}">Communication</a></li>
             <li><a class="dropdown-item" href="{{ url_for('pages', page='contribution') }}">Contribution</a></li>
             <li><a class="dropdown-item" href="{{ url_for('pages', page='description') }}">Description</a></li>
@@ -63,10 +69,12 @@
 
         <!---- PARTS ---->
         <li class="nav-item dropdown dropbtn">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Parts
-        </a>
-        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <div class="hover_box">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Parts
+            </a>
+        </div>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="{{ url_for('pages', page='part-collection') }}">Part Collection</a></li>
             <li><a class="dropdown-item" href="{{ url_for('pages', page='parts') }}">Parts</a></li>
             <li><a class="dropdown-item" href="{{ url_for('pages', page='improve') }}">Improve</a></li>
@@ -75,20 +83,26 @@
 
         <!---- SAFETY ---->
         <li class="nav-item dropbtn">
-        <a class="nav-link" href="{{ url_for('pages', page='safety') }}">Safety</a>
+        <div class="hover_box">
+            <a class="nav-link" href="{{ url_for('pages', page='safety') }}">Safety</a>
+        </div>
         </li>
 
         <!---- HUMAN PRACTICES ---->
         <li class="nav-item">
+        <div class="hover_box">
           <a class="nav-link" href="{{ url_for('pages', page='human-practices') }}">Human Practices</a>
+        </div>
         </li>
 
         <!---- AWARDS ---->
         <li class="nav-item dropdown dropbtn">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Awards
-        </a>
-        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <div class="hover_box">
+            <a class="nav-link dropdown-toggle " data-toggle="dropdown" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Awards
+            </a>
+        </div>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="{{ url_for('pages', page='education') }}">Education</a></li>
             <li><a class="dropdown-item" href="{{ url_for('pages', page='entrepreneurship') }}">Entrepreneurship</a></li>
             <li><a class="dropdown-item" href="{{ url_for('pages', page='hardware') }}">Hardware</a></li>
@@ -120,51 +134,25 @@
         </li>
 
     
-
-
     </ul>
     </div>
   </div>
 </nav>
 
-<script>
+<script type="text/javascript">
 
-    window.addEventListener('scroll', function(){
-        var nav = document.querySelector('nav');
-        if (window.pageYOffset>630){
-            nav.classList.add("sticky")
-        }else{
-            nav.classList.remove("sticky") 
-        }
-        
-    });
-</script>
-
-<!--
-<script src="static\bootstrap.bundle.min.js"></script>
-<script>
-
-    var nav = document.querySelector('nav');
-
-    window.addEventListener('scroll', function(){
-        if(window.pageYOffset >630){
-            nav.classList.add('bg-dark','shadow');
-            nav.classList.remove('bg-light','shadow');
-        }else{
-            nav.classList.remove('bg-dark','shadow');
-            av.classList.add('bg-light','shadow');
-           
-        }
+    $(document).ready(function () {
+        $('.dropdown').hover(function () {
+            $('ul.dropdown-menu, li.dropdown-item' , this).stop(true, true).slideDown('fast');
+            $(this).addClass('show');
+        }, function () {
+            $('ul.dropdown-menu, li.dropdown-item', this).stop(true, true).slideUp('fast');
+            setTimeout(100)
+            $(this).removeClass('show');
+        });
     });
 
 </script>
-
--->
-
-
-
-
-
 
 
 

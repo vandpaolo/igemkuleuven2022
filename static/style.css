@@ -64,24 +64,29 @@
 
   
 
-  #navbar {
-    //overflow: hidden;
-    font-size: 25px;
-    background-color: #333333;
-    min-height: 48px;
-  }
-
-  header{
-    height: 400px;
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-
-  body { 
-    padding-top: 56px; 
-    font-family: 'Heavitas';
+#navbar {
+  overflow: hidden;
+  font-size: 25px;
+  background-color: #333333;
+  min-height: 48px;
 }
 
+header{
+  height: 400px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+body { 
+  padding-top: 56px; 
+  font-family: 'Heavitas';
+}
+
+footer{
+  color: #b7d9d9;
+  font-family: 'Heavitas',sans-serif;
+  font-size: 15px;
+}
 .container {
     size: auto;
 }
@@ -91,13 +96,16 @@
 
 
 /* email ig fb mail */
+
+  
 .icon{
-  height:25px;
-  position:autos;
-  margin-right: 2px;
-  margin-left: 2px;
-  margin-bottom: -7px;
+  height:20px;
+  position:auto;
+  margin-left:10px;
+  margin-right: 10px;
+  margin-bottom: -18px;
 }
+
 .navbar .navbar-nav i{
   color: black;
 }
@@ -105,15 +113,16 @@
   color: white;
 }
 
-.icon:hover {
-  color: #2F9E9E;
-  transition: 0.6s;
+
+.navbar .icon:hover {
+  color: #005151;
+  transition: 0.2s;
+}
+.sticky .icon:hover {
+  color: #b7d9d9;
+  transition: 0.2s;
 }
 /* email ig fb mail end */
-
-.navbar_layout {
-  background-color: #662f2f;
-}
 
 .navbar .logo {
   height: 60px;
@@ -133,6 +142,16 @@
   display:none;
 }
 
+
+/*####################################*/
+/*NAVBAR ITEMS*/
+
+/*definition of navigation bar and sticky*/
+
+.navbar_layout {
+  background-color: inherit;
+}
+
 .navbar{
   font-size: 17px;  
   border: none;
@@ -147,6 +166,7 @@
   margin-top: 20px;
   z-index:10000;
   transition:0.6s;
+  height:70px;
   
 }
 
@@ -164,7 +184,12 @@
   
 }
 
+/*background  color of navigation bar and dropdown*/
+.navbar .navbar-nav{
+  background-color: inherit;
+}
 
+/* hover og links in the menu bar e.b. home etc difference btw sticky or not and hover*/
 .navbar .navbar-nav li a{
     color: #000000;
     font-family: 'Heavitas',sans-serif;
@@ -175,50 +200,52 @@
   font-size: 20px;
 }
 
-.icon{
-  height:20px;
-  position:auto;
+.navbar .navbar-nav li a:hover{
+  color: #005151;
+  font-family: 'Heavitas',sans-serif;
+  font-size: 20px;}
+.sticky .navbar-nav li a:hover{
+  color: #b7d9d9;
+  font-family: 'Heavitas',sans-serif;
+  font-size: 20px;
+}
+
+.nav-link {
   margin-left:10px;
-  margin-right: 10px;
-  margin-top: 7px;
+  margin-right:10px;
 }
 
-.navbar .navbar-nav{
-  background-color: inherit;
+.hover_box{
+  width: auto;
+  height: auto;
+  padding: 11px 0px;
+  position:inherit;
+  opacity: 1;
 }
 
-
-.nav-item a{
-  background-color: inherit;
-
-}
-
+/*####################################*/
+/*DROPDOWN ITEMS*/
 .navbar .dropdown-menu{
-  margin-top: 14px;
-  background-color:#ffffff;}
+  margin-left:-20px;
+  background-color:#ffffff;
+}
 .sticky .dropdown-menu{
-  margin-top: 11px;
   background-color:#005151;
-  transition: 0.5s;
 }
-
-.navbar .dropdown-item:hover, .dropdown-item a:hover, .nav-item:hover{
-  background-color: none;
-  text-decoration:none;
-  color:#6AB0B0;}
-.sticky .dropdown-item:hover, .dropdown-item a:hover, .nav-item:hover{
-  background-color: none;
-  text-decoration:none;
-  color:#ff0400;
-
-}
-
+/* color on click of dropdown*/
 .dropdown-item:active{
   color: red;
-  background-color: rgb(0, 35, 233)}
+  background-color: #2d6464;
+}
 .sticky.dropdown-item:active{
   color: red;
-  background-color: rgb(0, 35, 233)
+  background-color: 308e8e;
+}
+.dropdown-item:hover{
+  background-color: #f0f9f9;
+}
+.sticky .dropdown-item:hover{
+  background-color: #004848;
 }
 
 
@@ -229,7 +256,14 @@
 
 
 
+
 /*#################END NAVBAR################*/
+
+
+
+
+
+
 
 .left-aligned { margin-left: auto; }
 .bg-dark { background-color: #005151 !important; }
